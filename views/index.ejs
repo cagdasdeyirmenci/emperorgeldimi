@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+<form action="/" method="post">
+
+    <div class="ortala buyukYazi">Emperor <input style="font-size: 40px" type="submit" value="geldi mi?"></div>
+    <input type="hidden" name="resimsayi" value="<%= resimsayi %>">
+    <div class="ortala">
+        <img src="<%= resimlink %>"/>
+    </div>
+
+    <% if(geldimi == false){ %>
+    <div>
+        <div class="ortala buyukYazi">GELMEDİ</div>
+    </div>
+    <% } %>
+    <% if(geldimi == true){ %>
+    <div>
+        <div class="ortala buyukYazi">GELDİ</div>
+    </div>
+    <% } %>
+</form>
+</body>
+</html>
